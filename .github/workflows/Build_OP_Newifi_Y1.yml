@@ -3,7 +3,7 @@
 #   Author: JK
 #=================================================
 
-name: Build Newifi Y1
+name: Build Newifi y1
 
 on: 
   release:
@@ -11,7 +11,7 @@ on:
 
   push:
     branches: 
-      - master
+      - main
 
   #schedule:
   #  - cron: 0 20 * * *
