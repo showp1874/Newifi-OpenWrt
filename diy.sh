@@ -9,10 +9,17 @@ sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/theme
 
 echo '删除旧版argon,链接新版'
 rm -rf ./package/lean/luci-theme-argon
-git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon ../diy/luci-theme-argon
+git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon ../diy/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config ../diy/luci-app-argon-config
 #ln -s ../../../luci-theme-argon ./package/lean/
-git clone --depth=1 https://github.com/sirpdboy/luci-theme-opentopd ../diy/luci-theme-opentopd
+git clone --depth=1 https://github.com/garypang13/luci-theme-edge ../diy/luci-theme-edge
+
+echo '插件'
+git clone https://github.com/deplives/luci-app-turboacc ../diy/luci-app-turboacc
+git clone https://github.com/awesome-openwrt/luci-app-ramfree ../diy/luci-app-ramfree
+git clone https://github.com/sirpdboy/luci-app-advanced ../diy/luci-app-advanced
+git clone https://github.com/sirpdboy/NetSpeedTest ../diy/luci-app-NetSpeedTest
+git clone https://github.com/sirpdboy/luci-app-autotimeset ../diy/luci-app-autotimeset
 
 echo '集成diy目录'
 ln -s ../../diy ./package/openwrt-packages
