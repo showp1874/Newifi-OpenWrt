@@ -3,7 +3,7 @@
 #   Author: JK
 #=================================================
 
-name: Build Newifi y1
+name: Build Newifi Y1
 
 on: 
   release:
