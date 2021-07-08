@@ -13,12 +13,12 @@ echo '删除旧版argon,链接新版'
 # git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config ../custom/luci-app-argon-config
 git clone --depth=1 https://github.com/garypang13/luci-theme-edge ../custom/luci-theme-edge
 
-echo '插件'
+# echo '插件'
 # svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-turboacc ../custom/luci-app-turboacc
-svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ramfree ../custom/luci-app-ramfree
-git clone https://github.com/sirpdboy/luci-app-advanced ../custom/luci-app-advanced
-svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-jd-dailybonus ../custom/luci-app-jd-dailybonus
-svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-autoreboot ../custom/luci-app-autoreboot
+# svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ramfree ../custom/luci-app-ramfree
+# git clone https://github.com/sirpdboy/luci-app-advanced ../custom/luci-app-advanced
+# svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-jd-dailybonus ../custom/luci-app-jd-dailybonus
+# svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-autoreboot ../custom/luci-app-autoreboot
 
 echo '集成diy目录'
 ln -s ../../custom ./package/openwrt-packages
